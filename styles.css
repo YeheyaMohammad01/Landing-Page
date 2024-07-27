@@ -1,0 +1,339 @@
+* {
+  box-sizing: border-box;
+  /* border: 1px solid #ff0000; */
+  margin: 0;
+  padding: 0;
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+#particles-js {
+  position : absolute;
+  width:100%;
+  height:100%;
+  z-index:-1;
+}
+
+.SnowParticles {
+  position : absolute;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  z-index:-1;
+  margin: 5rem 0;
+}
+
+.AnimatedBorder {
+  position: relative;
+  padding: 20px;
+  border: 2px solid transparent;
+  animation: borderAnimation 5s infinite ease;
+}
+
+@keyframes borderAnimation {
+  0% {
+    border-color: rgba(255, 255, 255, 0.841);
+  }
+  50% {
+    border-color: rgba(76, 76, 76, 0.261);
+  }
+  100% {
+    border-color: rgba(255, 255, 255, 0.841);
+  }
+}
+
+/* Intro */
+
+.IntroContainer h1 {
+  transform: translateY(10rem);
+  color: #fff;
+}
+
+.IntroContainer h2 {
+  transform: translateY(10rem);
+  color: #fff;
+}
+
+.IntroContent {
+  display: flex;
+  flex-direction: column;
+  top: -25%;
+  position: relative;
+  font-size: 2rem;
+}
+
+.IntroContent .Bio {
+  transform: translateY(15rem);
+}
+
+.IntroContent p {
+  background: #1414146c;
+  color: rgb(212, 233, 252);
+  border-radius: 5%;
+  max-width: 50rem;
+}
+
+.IntroContent .Bio h3 {
+  color: #ffffff;
+}
+
+
+
+.BackgroundImage {
+  filter: blur(0.5rem);
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  width: 100%;
+  z-index: -2;
+}
+
+.BackgroundImage2 {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-size: cover;
+  z-index: -3;
+  filter: blur(0.5rem);
+}
+
+#Portrait {
+  border-radius: 100%;
+  border: 0.2rem solid #dadada;
+  box-shadow: 0rem 0rem 0.5rem #fff;
+  height: 40rem;
+  display: flex;
+}
+
+.IntroContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 0 auto;
+  height: 90vh;
+  z-index: 1;
+  width: 100%;
+}
+
+/* Navbar */
+
+.NavBar {
+  background: linear-gradient(to top, #000000 0%, #141414 100%);
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.NavBarContainer {
+  display: flex;
+  justify-content: right;
+  height: 80px;
+  z-index: 1;
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 0;
+}
+
+.NavBarLogo {
+  height: 5rem;
+}
+
+.NavBarMenu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  justify-content: space-between;
+}
+
+.NavBarItems {
+  height: 50px;
+}
+
+.NavBarLinks {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  padding: 0 1rem;
+  height: 100%;
+}
+
+/* Experience */
+.LanguagesContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.LanguagesContainer img {
+  width: 11rem;
+  height: 11rem;
+  background: #14141474;
+  border-radius: 0.2rem;
+  margin-right: 2rem;
+}
+
+.HeadStarter {
+  display: flex;
+  justify-content: center;
+  margin: 5rem 0;
+  z-index: 1;
+  width: 100%;
+}
+
+.HeadStarter img {
+  border-radius: 10%;
+  width: 20rem;
+  display: flex;
+}
+
+.HeadStarter p {
+  max-width: 40rem;
+  color: aliceblue;
+  font-size: 1.3rem;
+}
+
+.HeadStarter h1 {
+  color: #fff;
+  font-size: 2.5rem;
+}
+/* Projects */
+
+.SectionTitle {
+  display: flex;
+  justify-content: center;
+  background-image: linear-gradient(
+    to right,
+    #ff8177 0%,
+    #ff867a 0%,
+    #ff8c7f 21%,
+    #f99185 52%,
+    #cf556c 78%,
+    #b1285b 100%
+  );
+  background-size: 100%;
+  margin-bottom: 5rem;
+  font-size: 4rem;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  z-index: 1;
+  margin: 1em 0;
+}
+
+.ProjectsContainer {
+  display: flex;
+  justify-content: center;
+ 
+}
+
+.ProjectsItem {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  font-size: 2rem;
+  height: 35rem;
+  width: 50rem;
+  border-radius: 1rem;
+  position: relative; /* Required for the pseudo-element positioning */
+  color: #fff;
+  z-index: 1; /* Ensures the text stays above the pseudo-element */
+  margin: 1rem 0;
+}
+
+.ProjectsItem::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 1rem;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.316) 0%,
+      rgba(17, 17, 17, 0.6) 100%
+  ),
+  url("images/ImpctFrm.jpg");
+  background-size: cover;
+  filter: blur(0.15rem);
+  z-index: -1; /* Places the pseudo-element behind the text */
+}
+
+.ProjectsItem:hover {
+  transform: scale(1.01);
+  transition: 0.2s ease-in;
+}
+
+/* Footer CSS */
+
+.footer__container {
+  background: linear-gradient(to top, #000000 0%, #141414 100%);
+  padding: 5rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer__container h1 {
+  color: #fff;
+}
+
+#footer__logo {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 2rem;
+}
+
+.social__icon--link {
+  color: #fff;
+  font-size: 24px;
+}
+
+.social__media {
+  max-width: 1000px;
+  width: 100%;
+}
+
+.social__media--wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  max-width: 1000px;
+  margin: 40px auto 0 auto;
+}
+
+.social__icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 240px;
+}
+
+.social__logo {
+  color: #fff;
+  justify-self: flex-start;
+  margin-left: 20px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}

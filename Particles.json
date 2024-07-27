@@ -1,0 +1,18 @@
+{
+    "particles": {
+        "number": {
+            "value": 500
+        },
+        "shape": {
+            "type": "none"
+        },
+        "line_linked": {
+            "width":0.3,
+            "color":"#fff"
+        },
+        "move": {
+            "speed": 1,
+            "direction": "top"
+        }
+    }
+}
