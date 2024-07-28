@@ -17,9 +17,14 @@
   </head>
 
   <body>
-    <img src="images/Background.jpg" alt="BG" class="BackgroundImage" />
+    <!-- <img src="images/Background.jpg" alt="BG" class="BackgroundImage" /> -->
     <!-- Navigation -->
     <nav class="NavBar">
+      <div class="navbar__toggle" id="mobile-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
       <div id="particles-js"></div>
       <img src="images/Logo.png" alt="Logo" class="NavBarLogo" />
       <div class="NavBarContainer">
@@ -38,64 +43,76 @@
     <div class="Intro">
       <div class="IntroContainer">
         <div class="IntroContent">
-          <h1 class="Name">Yeheya Mohammad</h1>
-          <h2>Software Engineer</h2>
-          <div class="Bio">
-            <h3>Overview</h3>
-            <p class="AnimatedBorder">
-              Hello! I am Yeheya Mohammad, a Software Engineer at the University of Wisconsin Madison. 
-              My work spans both front-end and back-end development, focusing on creating solutions to address global challenges. 
-              In my spare time, I am a game developer and helper in ROBLOX communities, creating content for over thousands of users.
-            </p>
-          </div>
+          <ul>
+            <h1 class="Name">Yeheya Mohammad</h1>
+            <h2>Software Engineer</h2>
+            <div class="Bio">
+              <h3>Overview</h3>
+              <div class="ParagraphContainer"> 
+                <div class="VerticalLine"></div>
+                <p>
+                  Hello! I am Yeheya Mohammad, a Software Engineer at the University of Wisconsin Madison. 
+                  My work spans both front-end and back-end development, focusing on creating solutions to address global challenges. 
+                  In my spare time, I am a game developer and teacher in ROBLOX communities, creating content for hundreds of users.
+                </p>
+              </div>
+            </div>
+          </ul>
+          <img src="images/Portrait.jpg" alt="Yeheya Mohammad" id="Portrait"/>
         </div>
-        <img src="images/Portrait.jpg" alt="Yeheya Mohammad" id="Portrait" />
       </div>
     </div>
+    <div class="Divider AnimatedBorder"></div>
 
-    <!-- Experience -->
+    <!-- Experience -->  
+    <img src="images/Background2.jpg" alt="" class="BackgroundImage2" />
     <div id="particles-js2" class="SnowParticles"></div>
     <h1 class="SectionTitle">Experience</h1>
 
     <div class="Languages">
       <ul class="LanguagesContainer">
-        <img src="images/python-logo.png" alt="python-logo" />
+        <img src="images/python-logo.png" alt="python-logo"/>
         <img src="images/JS.jpg" alt="JavaScript" />
         <img src="images/LuaLogo.png" alt="Lua" />
         <img src="images/ReactLogo-removebg-preview.png" alt="React" />
         <img src="images/CSharpLogo.png" alt="C#" />
         <img src="images/JavaLogo.png" alt="Java" />
+        <img src="images/HTML_Logo-removebg-preview.png" alt="HTML">
+        <img src="images/css3-logo-png-transparent.png" alt="CSS">
       </ul>
 
       <div class="HeadStarter">
         <div class="Description">
           <h1>HeadStarter AI</h1>
-          <p>Accepted into the competitive 7-week HeadStarter AI Fellowship. 
-            Goal is to complete five AI projects, participate in weekly hackathons, 
-            and develop a final project for 1000+ users. 
-            Gained hands-on experience, and interview preperations, 
-            enhancing my technical and programming skills.</p>
+          <div class="ParagraphContainer">
+            <div class="VerticalLine"></div>
+            <p>Accepted into the competitive 7-week HeadStarter AI Fellowship. 
+              Goal is to participate in weekly projects, 
+              and develop a final project for 1000+ users. 
+              Gained hands-on experience, and interview preperations, 
+              enhancing my technical and programming skills.
+            </p>
+          </div>
         </div>
-        <img src="images/HeadStarterLogo.jpg" alt="HeadStarterAI Logo" />
+        <img src="images/HeadStarterLogo.jpg" alt="HeadStarterAI Logo" class="LookAt" />
       </div>
     </div>
 
+
     <!-- Content -->
+    <div class="Divider AnimatedBorder"></div>
     <div id="particles-js3" class="SnowParticles"></div>
-    <img src="images/Background2.jpg" alt="" class="BackgroundImage2" />
     <h1 class="SectionTitle">Projects</h1>
 
     <div class="Projects">
       <div class="ProjectsContainer">
         <ul>
-          <li class="ProjectsItem">
-            <p class="ContentDescription">
-              ImpactFrames library with API documentation.
-            </p>
-          </li>
-          <li class="ProjectsItem">
-            <p class="ContentDescription">Roblox Impact Frames</p>
-            <p>Includes API documentation</p>
+          <li class="ProjectsItem LookAt">
+            <h2>ImpactFrames Library</h2>
+            <div class="DescriptionContainer">
+              <p>A module that allows Roblox game developers to create intense gameplay effects.</p>
+              <a href="/">Link</a>
+            </div>
           </li>
         </ul>
       </div>
@@ -103,25 +120,18 @@
 
     <!-- Footer Section -->
     <div class="footer__container">
-      <h1>Get in touch.</h1>
+      <div class="FooterTitle">
+        <img src="images/Logo.png" alt="Logo" class="FooterLogo" />
+        <h1>Get in touch.</h1>
+      </div>
       <div class="social__media">
         <div class="social__media--wrap">
-          <img src="images/Logo.png" alt="Logo" class="NavBarLogo" />
           <div class="social__icons">
             <a href="/" class="social__icon--link" target="_blank">
               <i class="fab fa-discord"></i>
             </a>
             <a href="/" class="social__icon--link" target="_blank">
-              <i class="fab fa-instagram"></i>
-            </a>
-            <a href="/" class="social__icon--link" target="_blank">
-              <i class="fab fa-twitter"></i>
-            </a>
-            <a href="/" class="social__icon--link" target="_blank">
               <i class="fab fa-linkedin"></i>
-            </a>
-            <a href="/" class="social__icon--link" target="_blank">
-              <i class="fab fa-youtube"></i>
             </a>
           </div>
         </div>
